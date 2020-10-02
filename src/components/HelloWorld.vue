@@ -2,8 +2,7 @@
   <div class="scene1">
     <p class="string">input v-html : {{ inputString }}</p>
     <input class="input" v-model="inputString" placeholder="input your string">
-    <span v-html="inputString">
-    </span>
+    <span v-html="inputString"></span>
   </div>
 </template>
 
