@@ -1,17 +1,26 @@
 <template>
-  <div class="scene1">
-    <p class="string">input v-html : {{ inputString }}</p>
-    <input class="input" v-model="inputString" placeholder="input your string">
+  <div class="poc">
+    <p class="string">into v-html : {{ inputString }}</p>
+    <input class="input1" v-model="inputString" placeholder="input your string">
     <span v-html="inputString"></span>
+  </div>
+  <br>
+  <div class="poc2">
+    <p class="string">into v-bind : {{ userProvidedUrl }}</p>
+    <a v-bind:href="userProvidedUrl"> 
+      Click Me
+    </a>
+    <br>
+    <input class="input2" v-model="userProvidedUrl" placeholder="input your url">
   </div>
 </template>
 
 <script>
 export default {
-  vhtml: 'input-string',
   data () {
     return {
-      inputString: ''
+      inputString: '',
+      userProvidedUrl: ''
     }
   }
 }
