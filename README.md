@@ -1,5 +1,7 @@
 # vue-xss-poc
 
+- [Playground](https://vue-xss-poc.vercel.app/)
+
 ## Project setup
 ```
 npm install
