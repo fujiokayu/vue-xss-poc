@@ -1,4 +1,5 @@
 <template>
+  <h1>vue xss poc</h1>
   <div class="poc">
     <p class="string">into v-html : <span v-html="inputString"></span></p>
     <input class="input1" v-model="inputString" placeholder="input your string">
@@ -12,6 +13,8 @@
     <br>
     <input class="input2" v-model="userProvidedUrl" placeholder="input your url">
   </div>
+  <br>
+  <a href='https://github.com/fujiokayu/vue-xss-poc' target="_blank" rel="noopener">repository</a>
 </template>
 
 <script>
