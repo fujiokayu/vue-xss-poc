@@ -1,8 +1,7 @@
 <template>
   <div class="poc">
-    <p class="string">into v-html : {{ inputString }}</p>
+    <p class="string">into v-html : <span v-html="inputString"></span></p>
     <input class="input1" v-model="inputString" placeholder="input your string">
-    <span v-html="inputString"></span>
   </div>
   <br>
   <div class="poc2">
